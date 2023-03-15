@@ -3,7 +3,7 @@ const input = document.querySelector(".input_fill");
 const createBtn = document.querySelector(".create_btn");
 
 const getAllData = async () => {
-    const data = await fetch('http://localhost:3002/crud');
+    const data = await fetch('http://localhost:3002/gettext');
     const json = await data.json();
     return json;
 }
@@ -34,7 +34,7 @@ data
 
                 const id = value.getAttribute("data-id");
 
-                fetch('http://localhost:3002/crud', {
+                fetch('http://localhost:3002/gettext', {
                     method: "DELETE",
                     mode: "cors",
                     cache: "no-cache",
@@ -61,7 +61,7 @@ class Operations {
         createBtn.addEventListener('click', async () => {
             console.log(this.text);
 
-            await fetch('http://localhost:3002/crud', {
+            await fetch('http://localhost:3002/gettext', {
                 method: "POST",
                 mode: "cors",
                 cache: "no-cache",

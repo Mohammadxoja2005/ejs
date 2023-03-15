@@ -29,7 +29,7 @@ db.sequelize
     });
 
 // routes
-app.use('/crud', crud);
+app.use('/gettext', crud);
 
 app.get("/", (req, res) => {
     res.render('layout');
