@@ -1,0 +1,36 @@
+.input {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 10px;
+} 
+
+.create_btn {
+   background: black;
+   color: white;
+   padding: 10px;
+   border: 2px solid black;
+   cursor: pointer;
+} 
+
+.showData_text {
+   list-style: none;
+}  
+
+.renderData {
+   display: flex;
+   gap: 15px;
+   margin-bottom: 10px;
+} 
+
+.showData_btns {
+   display: flex;
+   gap: 5px;
+}
+
+.btn {
+   border: 2px solid black;
+   background: black;
+   color: white;
+   cursor: pointer;
+}
+
