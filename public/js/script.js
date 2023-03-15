@@ -3,7 +3,7 @@ const input = document.querySelector(".input_fill");
 const createBtn = document.querySelector(".create_btn");
 
 const getAllData = async () => {
-    const data = await fetch('http://localhost:3002/gettext');
+    const data = await fetch('https://ejs-production.up.railway.app/gettext');
     const json = await data.json();
     return json;
 }
@@ -34,7 +34,7 @@ data
 
                 const id = value.getAttribute("data-id");
 
-                fetch('http://localhost:3002/gettext', {
+                fetch('https://ejs-production.up.railway.app/gettext', {
                     method: "DELETE",
                     mode: "cors",
                     cache: "no-cache",
@@ -61,7 +61,7 @@ class Operations {
         createBtn.addEventListener('click', async () => {
             console.log(this.text);
 
-            await fetch('http://localhost:3002/gettext', {
+            await fetch('https://ejs-production.up.railway.app/gettext', {
                 method: "POST",
                 mode: "cors",
                 cache: "no-cache",
